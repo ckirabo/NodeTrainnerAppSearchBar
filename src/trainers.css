@@ -1,0 +1,42 @@
+
+
+h1 {
+
+}
+h2{
+	}
+
+ul{
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding: 5px;
+  background:#b3cccc;
+
+}
+
+li{
+	 float: left;
+}
+
+div.navigation{
+	padding: 15px;
+	
+}
+
+
+
+div.pageContent{
+	border-style: solid;
+	padding: 15px;
+}
+
+th, td {
+	padding: 10px;
+}
+
+table{
+	border-spacing: 5px;
+}
