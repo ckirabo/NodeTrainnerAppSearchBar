@@ -1,42 +1,33 @@
 import React, { Component } from 'react';
 
-class Table extends Component{
-	render(){
-		return(
+class Table extends Component {
 
-			<div>
+    render() {
 
-			<table>
-               <tr>
-                    <th>ID</th>
-                    <th>Trainer Name</th>
-                    <th>Speciality</th>
-                </tr>
-                 <tr>
-                    <td>1</td>
-                    <td>Joe Bloggs</td>
-                    <td>Java</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Jane Bloggs</td>
-                    <td>SpringBoot, Java</td>
+        //Loop through the array of data, convert it into an array of div elements.
+        let outputData = this.props.skillprop.map((element) => {
+            return (
+    
 
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>John Bloggs</td>
-                    <td>Python, Java</td>
-                </tr>
+          <div key={element.id}>
+          <tr>
+          <td><strong>{element.id}</strong>  {element.myData}</td>
+          <td><strong>{element.name}</strong> {element.myData}</td>
+          <td><strong>{element.Speciality}</strong>  {element.myData}</td>
+          </tr>
+          </div>
 
-			</table>
 
-			</div>
+            );
+        });
 
-			);
-	}
+        return (
+            <div>
+        {outputData}
+      </div>
+        );
 
+    }
 }
-
 
 export default Table;

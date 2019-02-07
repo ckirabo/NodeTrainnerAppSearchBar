@@ -29,7 +29,7 @@ class App extends Component {
 
 
      <ul>
-     <Link to ="/">{this.state.linkOne}</Link> 
+     <Link to ="/">{this.state.linkOne}</Link>                                                                                                                                                                                                                   
      <Link to ="/Trainers">{this.state.linkTwo}</Link>
      </ul>
       <Route exact path="/" component={LinkOne} />
